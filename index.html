@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop affordable fashion, home, and lifestyle finds at aadishop.">
+  <title>aadishop | Everyday finds, better prices</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="aadishop home">aadishop<span>.</span></a>
+    <form class="search" role="search" id="search-form">
+      <span class="search-icon" aria-hidden="true">⌕</span>
+      <input id="search-input" type="search" placeholder="Try saree, kurti, bedsheet..." aria-label="Search products">
+      <button type="submit">Search here</button>
+    </form>
+    <button class="cart-button" id="cart-button" type="button" aria-label="Shopping cart, 0 items">
+      <span aria-hidden="true">🛍</span>
+      <span>Cart</span>
+      <span class="cart-count" id="cart-count">0</span>
+    </button>
+  </header>
+
+  <nav class="category-nav" aria-label="Shop categories">
+    <button class="category-link active" type="button" data-category="All" aria-pressed="true">All</button>
+    <button class="category-link" type="button" data-category="Fashion" aria-pressed="false">Women’s fashion</button>
+    <button class="category-link" type="button" data-category="Men" aria-pressed="false">Men</button>
+    <button class="category-link" type="button" data-category="Home" aria-pressed="false">Home & living</button>
+    <button class="category-link" type="button" data-category="Beauty" aria-pressed="false">Beauty</button>
+    <button class="category-link" type="button" data-category="Kids" aria-pressed="false">Kids</button>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">A little something for everyone</p>
+        <h1>Good finds.<br><span>Great prices.</span></h1>
+        <p>Explore everyday styles and home favourites without stretching your budget.</p>
+        <a class="hero-button" href="#products">Explore collection <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="hero-sun"></div>
+        <div class="hero-bag">🛍️</div>
+        <div class="hero-sparkle sparkle-one">✦</div>
+        <div class="hero-sparkle sparkle-two">✳</div>
+        <div class="hero-caption">little joys, every day</div>
+      </div>
+    </section>
+
+    <section class="benefits" aria-label="Shopping benefits">
+      <div><span aria-hidden="true">🚚</span><p><strong>Easy delivery</strong><br>Right to your door</p></div>
+      <div><span aria-hidden="true">💸</span><p><strong>Budget friendly</strong><br>Find a great deal</p></div>
+      <div><span aria-hidden="true">↩</span><p><strong>Simple returns</strong><br>Shop with confidence</p></div>
+    </section>
+
+    <section class="products-section" id="products">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Picked for you</p>
+          <h2>Popular right now</h2>
+        </div>
+        <p class="result-count" id="result-count" aria-live="polite"></p>
+      </div>
+      <div class="product-grid" id="product-grid"></div>
+      <p class="empty-state" id="empty-state" hidden>No products match that search. Try another word.</p>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#">aadishop<span>.</span></a>
+    <p>A simple student storefront demo. Made for everyday discoveries.</p>
+    <small>© 2026 aadishop. Demo project.</small>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
