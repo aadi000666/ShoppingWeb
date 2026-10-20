@@ -22,5 +22,5 @@ No dependencies or installation are required. Open `index.html` in a browser, or
 
 ## Notes
 
-This is a front-end demo: product data is defined in `script.js`, and cart contents are kept in memory, so they reset when the page is refreshed. It does not process real orders or payments.
+This is a front-end demo created by Me: product data is defined in `script.js`, and cart contents are kept in memory, so they reset when the page is refreshed. It does not process real orders or payments.
 #
